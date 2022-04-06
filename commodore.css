@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .6s ease-in-out;
+    /* добавим плавность переходов для всех элементов страницы*/
+ }
+ul {
+    list-style: none;
+ }
+ a {
+    text-decoration: none;
+    outline: none;
+ }
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #606060;
+    font-size: 14px;
+}
+.container {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 0 15px;
+    background: white;
+    display: inline-block;
+}
+.post-image img {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+.post h1 {
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.post-meta {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+time,
+.author {
+    padding-right: 26px;
+    position: relative;
+}
+time:after,
+.author:after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #666;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+p {
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 960px;
+      padding: 0 15px;
+
+    }
+    .post-image img {
+        float: right;
+        width: 300px;
+        margin: 0 0 20px 20px;
+    }
+    .post-header {
+        padding-left: 26px;
+        border-left: 4px solid #D8D8D8;
+        margin-left: -30px;
+    }
+    
+}
+ /* блок для виджетов */
+
+ .widget-title {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid #7EB5A6;
+    box-shadow: 3px 3px 0 0 #7EB5A6;
+ }
+ .widget-category-list li {
+    border-bottom: 1px solid #EBEBE3;
+    padding: 10px 0;
+    color: #c6c6c6;
+    font-style: italic;
+ }
+ .widget-category-list li:last-child {
+    border-bottom: none;
+ }
+ .widget-category-list a:hover{
+    color: #53B8BB;
+ }
+ .widget-category-list li a {
+    color: #626262;
+    margin-right: 6px;
+    font-style: normal;
+ }
+ .widget-category-list li a:before {
+    content: "\f105";
+    display: inline-block;
+    font-family: 'FontAwesome';
+    margin-right: 10px;
+    color: #c6c6c6;
+ }
+ .widget-posts-list li {
+    border-top: 1px solid #EBEBE3;
+    padding: 15px 0;
+ }
+ .widget-posts-list li:nth-child(1) {
+    border-top: none;
+ }
+ .widget-post-title {
+    float: left;
+ }
+ 
